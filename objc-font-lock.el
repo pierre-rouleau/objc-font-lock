@@ -361,7 +361,7 @@ and strings."
   (goto-char (match-end 1)))
 
 
-(defun objc-font-lock-match-bracket-content (lim)
+(defun objc-font-lock-match-bracket-content (_lim)
   "Find function name part of Objective-C method call.
 
 The point is moved to end of the argument."
