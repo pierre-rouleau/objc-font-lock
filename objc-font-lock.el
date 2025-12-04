@@ -194,6 +194,7 @@ To disable this highlighting, set this to nil."
 
 ;;;###autoload
 (define-global-minor-mode objc-font-lock-global-mode objc-font-lock-mode
+  "Global execution of `objc-font-lock-mode'."
   (lambda ()
     (when (apply 'derived-mode-p objc-font-lock-modes)
       (objc-font-lock-mode 1)))
